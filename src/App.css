@@ -54,12 +54,12 @@ body {
 .tab.active {
   background: #e8efff;
   border-color: #587ee3;
-  color: #214bb1;
+  color: orange;
 }
 .lab-panel {
   min-height: 345px;
   border: 1px solid #dfe5f0;
-  border-radius: 16px;
+  border-radius: 0px;
   background: white;
   padding: 28px;
   box-shadow: 0 8px 22px #273c6420;

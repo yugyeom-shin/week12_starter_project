@@ -20,7 +20,7 @@ export default function App() {
     <main className="page">
       <header className="hero">
         <p className="eyebrow">OPEN SOURCE STUDIO · WEEK 12</p>
-        <h1>React Hooks Playground</h1>
+        <h1>useEffect, useRef를 활용하여 타이머와 focuse 기능 구현</h1>
         <p>useEffect · Cleanup · useRef — 4개의 독립된 Lab</p>
       </header>
 

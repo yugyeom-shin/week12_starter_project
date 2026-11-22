@@ -72,6 +72,13 @@ useRef가 import되어 있다. useRef(null)로 Input 요소를 참조하고, .cu
 - LAB 2와 LAB 4의 Timer 관리 방식은 어떻게 다른가? : LAB2는 State와 useEffect를 사용하여 타이머를 관리하고, LAB4는 useRef에 ID를 저장하여 타이머를 관리한다.
 
 ## 6 Customizing: 수정 내용 및 파일명
+### 프로젝트 제목 또는 설명 변경
+- 파일명 : App.jsx
+- 수정 내용 : <h1>React Hooks Playground</h1> >> <h1>useEffect, useRef를 활용하여 타이머와 focuse 기능 구현</h1>
+### CSS 스타일 2곳 이상 변경
+- 파일명 : App.css
+- 수정 내용 : .tab.active의 color: #214bb1; >> color: orange;
+- 수정 내용 : .lab-panel의 border-radius: 16px; >> border-radius: 0px;
 
 ## 7 Deployment: 실제 접근 가능한 Vercel URL
 https://week12-starter-project-rocu.vercel.app/
@@ -79,14 +86,12 @@ https://week12-starter-project-rocu.vercel.app/
 ## 8 Weekly Review:
 ### 새롭게 배운 내용 3가지
 - useRdf와 useState의 차이 : useState의 값을 변경하면 컴포넌트가 다시 렌더링되지만, useRef의 .current 값을 변경해도 리렌더링이 발생하지 않는다.
-- 
-- 
+- Cleanup의 역할 : Cleanup을 사용하지 않으면 setInterval로 생성한 타이머가 정리되지 않는다. clearInterval()을 통해 기존 타이머를 정리하여 컴포넌트가 사라진 후에도 타이머가 실행되거나 중복 생성되는 문제를 방지한다.
+- useEffect의 Dependency Array : Dependency Array는 실행 시점 지정한다. 지정하지 않으면 렌더링될 때마다 Effect가 다시 실행된다. 
 ### 어려웠던 점과 해결 방법
 코드에 todo가 나와있고 수업자료에 코드가 나와있어 코드 작성 자체는 크게 어려웠던 점은 없었다. 이해가 안되거나 부족한 개념은 ai를 사용하여 공부했다.
 ### AI 활용 내용 및 느낀 점
-useRef의 .current 기능 / 
-
-
+useRef의 .current 기능 / cleanup 역할
 
 
 # OSS Week 12 — React Hooks Playground (Student Starter)
