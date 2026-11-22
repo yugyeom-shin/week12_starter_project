@@ -53,15 +53,23 @@ useRef가 import되어 있다. useRef(null)로 Input 요소를 참조하고, .cu
 
 ## 4 Lab Implementation: 4개 Lab 구현 내용 및 실행 결과
 ### lab1
+- 구현 내용 : setInterval을 통해 1초마다 count가 1 증가, clearInterval 호출하여 정리
+- 실행 결과 : 1초마다 1 증가
 ### lab2
+- 구현 내용 : running State와 useEffect를 이용하여 Start, Stop, Reset 기능 구현.
+- 실행 결과 : start 버튼을 누르면 1 증가, stop을 누르면 멈춤, reset을 누르면 초기화
 ### lab3
+- 구현 내용 : input DOM을 참조할 inputRef 생성하고, .current를 이용하여 input에 focus() 호출
+- 실행 결과 : Focus 버튼을 누르면 입력창으로 커서가 이동하고, Clear 버튼을 누르면 입력값을 초기화
 ### lab4
+- 구현 내용 : useRef에 타이머 ID를 저장하여 Start, Stop, Reset 기능 구현.
+- 실행 결과 : start 버튼을 누르면 1 증가, stop을 누르면 멈춤, reset을 누르면 초기화
 
 ## 5 Lab Comparison: STEP 3의 비교 분석 질문 4개에 대한 답변
-- useEffect의 Dependency Array가 필요한 이유는?
-- Cleanup을 사용하지 않으면 어떤 문제가 발생할 수 있는가?
-- useState와 useRef의 가장 중요한 차이는?
-- LAB 2와 LAB 4의 Timer 관리 방식은 어떻게 다른가?
+- useEffect의 Dependency Array가 필요한 이유는? : Dependency Array는 실행 시점 지정한다. 지정하지 않으면 렌더링될 때마다 Effect가 다시 실행된다.
+- Cleanup을 사용하지 않으면 어떤 문제가 발생할 수 있는가? : Cleanup을 사용하지 않으면 setInterval로 생성한 타이머가 정리되지 않아 컴포넌트가 사라진 후에도 계속 실행되거나, 타이머가 중복 생성될 수 있다.
+- useState와 useRef의 가장 중요한 차이는? : 값 변경 시 렌더링 차이. useState는 값 변경시 리렌더링 하며, useRef는 .current 값을 변경해서 리렌더링 하지 않는다.
+- LAB 2와 LAB 4의 Timer 관리 방식은 어떻게 다른가? : LAB2는 State와 useEffect를 사용하여 타이머를 관리하고, LAB4는 useRef에 ID를 저장하여 타이머를 관리한다.
 
 ## 6 Customizing: 수정 내용 및 파일명
 
@@ -74,7 +82,7 @@ https://week12-starter-project-rocu.vercel.app/
 - 
 - 
 ### 어려웠던 점과 해결 방법
-
+코드에 todo가 나와있고 수업자료에 코드가 나와있어 코드 작성 자체는 크게 어려웠던 점은 없었다. 이해가 안되거나 부족한 개념은 ai를 사용하여 공부했다.
 ### AI 활용 내용 및 느낀 점
 useRef의 .current 기능 / 
 
