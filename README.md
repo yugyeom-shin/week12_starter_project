@@ -52,12 +52,21 @@ Dependency Array가 []이므로 최초 마운트 시 Effect가 실행된다. set
 useRef가 import되어 있다. useRef(null)로 Input 요소를 참조하고, .current.focus()를 통해 입력창으로 포커스를 이동시킬 수 있다.
 
 ## 4 Lab Implementation: 4개 Lab 구현 내용 및 실행 결과
+### lab1
+### lab2
+### lab3
+### lab4
 
 ## 5 Lab Comparison: STEP 3의 비교 분석 질문 4개에 대한 답변
+- useEffect의 Dependency Array가 필요한 이유는?
+- Cleanup을 사용하지 않으면 어떤 문제가 발생할 수 있는가?
+- useState와 useRef의 가장 중요한 차이는?
+- LAB 2와 LAB 4의 Timer 관리 방식은 어떻게 다른가?
 
 ## 6 Customizing: 수정 내용 및 파일명
 
 ## 7 Deployment: 실제 접근 가능한 Vercel URL
+https://week12-starter-project-rocu.vercel.app/
 
 ## 8 Weekly Review:
 ### 새롭게 배운 내용 3가지
@@ -65,8 +74,9 @@ useRef가 import되어 있다. useRef(null)로 Input 요소를 참조하고, .cu
 - 
 - 
 ### 어려웠던 점과 해결 방법
+
 ### AI 활용 내용 및 느낀 점
-useRef의 .current 기능과 useState의 차이 개념 / 
+useRef의 .current 기능 / 
 
 
 
